@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela inicial</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<nav class="navbar">
+    <div class="nav-container">
+
+  
+        <a href="index.html" class="logo">
+            PARADISE<span>STREAM</span>
+        </a>
+
+        <form class="search-box">
+           <input type="text" id="campoBusca" placeholder="Buscar séries...">
+           <button type="button" id="botaoBusca">&#128269;</button>
+        </form>
+       
+        <ul class="nav-links">
+            <li>
+                <a href="index.html" >Início</a>
+            </li>
+
+            <li>
+                <a href="filmes.html">Filmes</a>
+            </li>
+
+            <li>
+                <a href="series.html" class="active">Séries</a>
+            </li>
+        </ul>
+
+    </div>
+</nav>
+
+
+<body>
+    
+
+
+<!-- PRIMEIRO CARROSSEL -->
+<div class="container-fluid mt-4">
+
+    <h2 class="text-white mb-3">Séries em destaque</h2>
+
+    <div id="carrosselDestaques" class="carousel slide"  data-bs-wrap="true">
+
+        <div class="carousel-inner">
+
+            <div class="carousel-item active">
+                <div class="row row-cols-2 row-cols-md-3 g-3">
+
+                    <div class="col">
+                        <div class="card bg-dark text-white">
+                            <img src="https://m.media-amazon.com/images/M/MV5BMzU5ZGYzNmQtMTdhYy00OGRiLTg0NmQtYjVjNzliZTg1ZGE4XkEyXkFqcGc@._V1_QL75_UX190_CR0,2,190,281_.jpg" class="card-img-top"alt="Homem Aranha: Brand New Day">
+                            <div class="card-body">
+                                <h6>Breaking Bad</h6>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card bg-dark text-white">
+                            <img src="https://m.media-amazon.com/images/M/MV5BYjdlNGJlYjQtMDU2Mi00ZjA1LWEwYzgtYzlmNDM5MmE1ZGUwXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" class="card-img-top">
+                            <div class="card-body">
+                                <h6>Band of Brothers </h6>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card bg-dark text-white">
+                            <img src="https://m.media-amazon.com/images/M/MV5BYjIxZTMwZmUtOTUzYS00YmU2LWJhNDAtNzA2NDg0NDA0MjVkXkEyXkFqcGc@._V1_.jpg" class="card-img-top">
+                            <div class="card-body">
+                                <h6>The Wire</h6>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <!-- Segundo grupo de filmes -->
+                 <div class="row row-cols-2 row-cols-md-3 g-3">
+
+                    <div class="col">
+                        <div class="card bg-dark text-white">
+                            <img src="https://m.media-amazon.com/images/M/MV5BYTNjNjc5OWQtYjMxNC00MzEwLWIxM2UtNjU3NzhkNjZmNGI3XkEyXkFqcGc@._V1_.jpg" class="card-img-top"alt="Homem Aranha: Brand New Day">
+                            <div class="card-body">
+                                <h6>Mad Men</h6>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card bg-dark text-white">
+                            <img src="https://m.media-amazon.com/images/M/MV5BZmZhY2ViYzYtMTQ0NS00NDcyLWIxZTYtMGUyODE0NDA0NmNkXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" class="card-img-top">
+                            <div class="card-body">
+                                <h6>Lost</h6>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card bg-dark text-white">
+                            <img src="https://m.media-amazon.com/images/M/MV5BZjQwYzBlYzUtZjhhOS00ZDQ0LWE0NzAtYTk4MjgzZTNkZWEzXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" class="card-img-top">
+                            <div class="card-body">
+                                <h6>The Office</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <button class="carousel-control-prev" type="button"
+            data-bs-target="#carrosselDestaques" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+
+        <button class="carousel-control-next" type="button"
+            data-bs-target="#carrosselDestaques" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+
+    </div>
+</div>
+
+
+<!-- SEGUNDO CARROSSEL -->
+<div class="container-fluid mt-5">
+
+    <h2 class="text-white mb-3">Séries de ação</h2>
+
+    <div id="carrosselAcao" class="carousel slide" data-bs-wrap="true">
+
+        <div class="carousel-inner">
+
+            <div class="carousel-item active">
+                <div class="row row-cols-2 row-cols-md-3 g-3">
+
+                    <div class="col">
+                        <div class="card bg-dark text-white">
+                            <img src="https://m.media-amazon.com/images/M/MV5BMmE0YTA3MTItMjhiNC00MGQ3LTllZDktNGNiZWY1OWFmNmM1XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" class="card-img-top"alt="Homem Aranha: Brand New Day">
+                            <div class="card-body">
+                                <h6>Reacher</h6>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card bg-dark text-white">
+                            <img src="https://m.media-amazon.com/images/M/MV5BYjRkYzAzNjktZmRhMy00NjRiLWE0OTMtYmRmMTE5NDkzY2NlXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" class="card-img-top">
+                            <div class="card-body">
+                                <h6>The Mandalorian </h6>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card bg-dark text-white">
+                            <img src="https://upload.wikimedia.org/wikipedia/pt/4/40/Alice_in_Borderland_%28s%C3%A9rie%29.png?utm_source=pt.wikipedia.org&utm_campaign=index&utm_content=original" class="card-img-top">
+                            <div class="card-body">
+                                <h6>Alice in Borderland</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <!-- Segundo grupo de filmes -->
+              
+            <div class="row row-cols-2 row-cols-md-3 g-3">
+
+                 <div class="col">
+                        <div class="card bg-dark text-white">
+                            <img src="https://br.web.img3.acsta.net/c_310_420/pictures/19/09/23/15/43/4695144.jpg" class="card-img-top"alt="Homem Aranha: Brand New Day">
+                            <div class="card-body">
+                                <h6>Vagabond</h6>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card bg-dark text-white">
+                            <img src="https://m.media-amazon.com/images/M/MV5BMjEzMDAxOTUyMV5BMl5BanBnXkFtZTgwNzAxMzYzOTE@._V1_.jpg" class="card-img-top">
+                            <div class="card-body">
+                                <h6>Stranger Things</h6>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card bg-dark text-white">
+                            <img src="https://m.media-amazon.com/images/M/MV5BNjA0ZDZiNmQtM2E2Ni00Y2UzLTgzYjktMzE2YzJhYzZhNzI4XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" class="card-img-top">
+                            <div class="card-body">
+                                <h6>The Walking Dead</h6>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+        </div>
+
+        <button class="carousel-control-prev" type="button"
+            data-bs-target="#carrosselAcao" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+
+        <button class="carousel-control-next" type="button"
+            data-bs-target="#carrosselAcao" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+
+    </div>
+</div>
+
+
+
+
+
+<!-- TERCEIRO CARROSSEL -->
+<div class="container-fluid mt-5">
+
+    <h2 class="text-white mb-3">Séries de Terror</h2>
+
+    <div id="carrosselTerror" class="carousel slide" data-bs-wrap="true">
+
+        <div class="carousel-inner">
+
+            <div class="carousel-item active">
+                <div class="row row-cols-2 row-cols-md-3 g-3">
+
+                    <div class="col">
+                        <div class="card bg-dark text-white">
+                            <img src="https://upload.wikimedia.org/wikipedia/pt/c/cd/The_Haunting_of_Hill_House_poster.jpg?utm_source=pt.wikipedia.org&utm_campaign=index&utm_content=original" class="card-img-top"alt="Homem Aranha: Brand New Day">
+                            <div class="card-body">
+                                <h6>The Haunting of Hill House</h6>
+                            </div>
+                        </div>
+                    </div>
+
+                    
+                    <div class="col">
+                        <div class="card bg-dark text-white">
+                            <img src="https://br.web.img3.acsta.net/c_310_420/img/9d/0d/9d0d1c113a7c5379e407fbebbd18df5e.jpg" class="card-img-top">
+                            <div class="card-body">
+                                <h6>Carrie</h6>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card bg-dark text-white">
+                            <img src="https://beam-images.warnermediacdn.com/BEAM_LWM_DELIVERABLES/e4d6d6a6-69ea-46ce-a4cf-9f9b878eaaa5/74175fcc-c7b6-11f1-82b7-02ffdbe2ad4b.jpeg?host=wbd-images.prod-vod.h264.io&partner=beamcom&w=1024&w=1024" class="card-img-top">
+                            <div class="card-body">
+                                <h6>Crystal Lake</h6>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <!-- Segundo grupo de filmes -->
+                 <div class="row row-cols-2 row-cols-md-3 g-3">
+
+                    <div class="col">
+                        <div class="card bg-dark text-white">
+                            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgOSMg4nmaiRyCa21LGTaWt3hrA0kWEskj_7F_7ft_HHskgRO3v9Zrbc0MyrVa-72BZ24nM1B_fEFYrzVNpQ2a7xLzaEXzt3HIpvCV1BCuNKI-pDH_AQ-sHpCIThUvjP12i4H1JbN5-_aLP/s1260/RubberWoman_1.jpg" class="card-img-top"alt="Homem Aranha: Brand New Day">
+                            <div class="card-body">
+                                <h6>American Horror Story</h6>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card bg-dark text-white">
+                            <img src="https://m.media-amazon.com/images/M/MV5BNDFmODE3NDktZGVhNS00M2NmLWI1NDAtNTgzOTA0ZGFhODFiXkEyXkFqcGc@._V1_.jpg" class="card-img-top">
+                            <div class="card-body">
+                                <h6>IT: Bem-Vindos a Derry</h6>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card bg-dark text-white">
+                            <img src="https://br.web.img3.acsta.net/pictures/15/11/20/12/36/033224.jpg" class="card-img-top">
+                            <div class="card-body">
+                                <h6>Scream</h6>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+        <button class="carousel-control-prev" type="button"
+            data-bs-target="#carrosselTerror" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+
+        <button class="carousel-control-next" type="button"
+            data-bs-target="#carrosselTerror" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+
+    </div>
+</div>
+
+
+
+
+
+<!-- QUARTO CARROSSEL -->
+<div class="container-fluid mt-5">
+
+    <h2 class="text-white mb-3">Séries de Comédia</h2>
+
+    <div id="carrosselComedia" class="carousel slide" data-bs-wrap="true">
+
+        <div class="carousel-inner">
+
+            <div class="carousel-item active">
+                <div class="row row-cols-2 row-cols-md-3 g-3">
+
+                    <div class="col">
+                        <div class="card bg-dark text-white">
+                            <img src="https://m.media-amazon.com/images/M/MV5BM2U1M2QxZDYtMzgyYS00OWQ5LWIyNGUtMmQ1MGQ2NTU2NzNhXkEyXkFqcGc@._V1_QL75_UX190_CR0,2,190,281_.jpg" class="card-img-top"alt="Homem Aranha: Brand New Day">
+                            <div class="card-body">
+                                <h6>Todo Mundo Odeia O Chris</h6>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card bg-dark text-white">
+                            <img src="https://upload.wikimedia.org/wikipedia/pt/7/71/Brooklyn_Nine-Nine-5.jpg?utm_source=pt.wikipedia.org&utm_campaign=index&utm_content=original" class="card-img-top">
+                            <div class="card-body">
+                                <h6>Brooklyn Nine-Nine</h6>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card bg-dark text-white">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqtM5kJYipkSi_kPed-Jo1_1uBPgOtE3lOm4PQI-a8JQ&s=10" class="card-img-top">
+                            <div class="card-body">
+                                <h6>Um Maluco No Pedaço</h6>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                 <div class="row row-cols-2 row-cols-md-3 g-3">
+
+                   <div class="col">
+                        <div class="card bg-dark text-white">
+                            <img src="https://m.media-amazon.com/images/M/MV5BNmJjNzljZGMtYjBkOC00OWM5LThjZTctNDhmYjU2OWIxMjdkXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" class="card-img-top"alt="Homem Aranha: Brand New Day">
+                            <div class="card-body">
+                                <h6>Dois Homens E Meio</h6>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card bg-dark text-white">
+                            <img src="https://m.media-amazon.com/images/M/MV5BZjQwYzBlYzUtZjhhOS00ZDQ0LWE0NzAtYTk4MjgzZTNkZWEzXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" class="card-img-top">
+                            <div class="card-body">
+                                <h6>The Office</h6>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card bg-dark text-white">
+                            <img src="https://m.media-amazon.com/images/M/MV5BMWZjYWEwMGMtNDE0MC00ODQ0LTlhNTMtZjhlYzhkNjcwYWU4XkEyXkFqcGc@._V1_.jpg" class="card-img-top">
+                            <div class="card-body">
+                                <h6>Eu, A Patroa E As Crianças</h6>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+        <button class="carousel-control-prev" type="button"
+            data-bs-target="#carrosselComedia" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+
+        <button class="carousel-control-next" type="button"
+            data-bs-target="#carrosselComedia" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+
+    </div>
+</div>
+
+
+
+
+
+
+<!-- QUINTO CARROSSEL -->
+<div class="container-fluid mt-5">
+
+    <h2 class="text-white mb-3">Séries de Romance</h2>
+
+    <div id="carrosselRomance" class="carousel slide" data-bs-wrap="true">
+
+        <div class="carousel-inner">
+
+            <div class="carousel-item active">
+                <div class="row row-cols-2 row-cols-md-3 g-3">
+
+                    <div class="col">
+                        <div class="card bg-dark text-white">
+                            <img src="https://infinitasvidas.wordpress.com/wp-content/uploads/2021/01/bridgerton-poster.png" class="card-img-top"alt="Homem Aranha: Brand New Day">
+                            <div class="card-body">
+                                <h6>Bridgerton</h6>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card bg-dark text-white">
+                            <img src="https://m.media-amazon.com/images/M/MV5BOTE0MjQ1NDU3OV5BMl5BanBnXkFtZTgwNTI4MTgwNzM@._V1_FMjpg_UX1000_.jpg" class="card-img-top">
+                            <div class="card-body">
+                                <h6>Sex Education</h6>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card bg-dark text-white">
+                            <img src="https://m.media-amazon.com/images/M/MV5BOTJiYjZkNjItM2YxYi00N2FlLTlkNmQtNjI4MDlmZGRkNGM3XkEyXkFqcGc@._V1_.jpg" class="card-img-top">
+                            <div class="card-body">
+                                <h6>Heartstopper</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <!-- Segundo grupo de filmes -->
+                 <div class="row row-cols-2 row-cols-md-3 g-3">
+
+                    <div class="col">
+                        <div class="card bg-dark text-white">
+                            <img src="https://m.media-amazon.com/images/M/MV5BMzFkNGVjZWEtYmFkNy00MjhmLWI0ODktMWUwZWM3MmU3MzExXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" class="card-img-top"alt="Homem Aranha: Brand New Day">
+                            <div class="card-body">
+                                <h6>Amor no Espectro</h6>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card bg-dark text-white">
+                            <img src="https://m.media-amazon.com/images/M/MV5BMTc4M2JmYmEtMjJhOC00MmRlLThhZDEtMWRhZTZiNTI0ZDZhXkEyXkFqcGc@._V1_.jpg" class="card-img-top">
+                            <div class="card-body">
+                                <h6>Outlander </h6>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card bg-dark text-white">
+                            <img src="https://m.media-amazon.com/images/M/MV5BM2U4NTFmMjktMDNkYy00MDdmLWEzNzktZDQ0MTAxNmY4ZWQ5XkEyXkFqcGc@._V1_.jpg" class="card-img-top">
+                            <div class="card-body">
+                                <h6>Virgin River</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <button class="carousel-control-prev" type="button"
+            data-bs-target="#carrosselRomance" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+
+        <button class="carousel-control-next" type="button"
+            data-bs-target="#carrosselRomance" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+
+    </div>
+</div>
+
+
+
+<!-- QUINTO CARROSSEL -->
+<div class="container-fluid mt-5">
+
+    <h2 class="text-white mb-3">Séries para Família</h2>
+
+    <div id="carrosselFam" class="carousel slide" data-bs-wrap="true">
+
+        <div class="carousel-inner">
+
+            <div class="carousel-item active">
+                <div class="row row-cols-2 row-cols-md-3 g-3">
+
+                   <div class="col">
+                        <div class="card bg-dark text-white">
+                            <img src="https://br.web.img3.acsta.net/c_310_420/pictures/16/04/11/16/56/089875.jpg" class="card-img-top"alt="Homem Aranha: Brand New Day">
+                            <div class="card-body">
+                                <h6>Naruto</h6>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card bg-dark text-white">
+                            <img src="https://static.wikia.nocookie.net/dublagem/images/6/6a/Dragon_Ball_Z.png/revision/latest?cb=20241216225338&path-prefix=pt-br" class="card-img-top">
+                            <div class="card-body">
+                                <h6>Dragonball Z</h6>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card bg-dark text-white">
+                            <img src="https://m.media-amazon.com/images/M/MV5BYzJiZWNiOTEtOTBmYS00NDFmLWFhN2EtMzk1NzJjMDZhZjg0XkEyXkFqcGc@._V1_.jpg" class="card-img-top">
+                            <div class="card-body">
+                                <h6>Spider-man</h6>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <!-- Segundo grupo de filmes -->
+                 <div class="row row-cols-2 row-cols-md-3 g-3">
+
+                   <div class="col">
+                        <div class="card bg-dark text-white">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRw0PR3DsCdh094dq8tys2j0OrvZEQ99MY1-FQZKFqKg_mHobxrLwiEjJ4&s=10" class="card-img-top"alt="Homem Aranha: Brand New Day">
+                            <div class="card-body">
+                                <h6>Hora De Aventura</h6>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card bg-dark text-white">
+                            <img src="https://static.wikia.nocookie.net/dublagem/images/6/67/UrsosSemCurso.png/revision/latest/scale-to-width/360?cb=20260718230755&path-prefix=pt-br" class="card-img-top">
+                            <div class="card-body">
+                                <h6>Ursos Sem Curso</h6>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card bg-dark text-white">
+                            <img src="https://static.wikia.nocookie.net/dublagem/images/b/be/Apenasumshowfitasperdidas.png/revision/latest?cb=20260506125609&path-prefix=pt-br" class="card-img-top">
+                            <div class="card-body">
+                                <h6>Apenas Um Show</h6>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+        <button class="carousel-control-prev" type="button"
+            data-bs-target="#carrosselFam" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+
+        <button class="carousel-control-next" type="button"
+            data-bs-target="#carrosselFam" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+
+    </div>
+</div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>

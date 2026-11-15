@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela inicial</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<nav class="navbar">
+    <div class="nav-container">
+
+        <!-- Logo -->
+        <a href="index.html" class="logo">
+            PARADISE<span>STREAM</span>
+        </a>
+
+        <form class="search-box">
+           <input type="text" id="campoBusca" placeholder="Buscar filmes e séries...">
+           <button type="button" id="botaoBusca">&#128269;</button>
+        </form>
+
+        <!-- Links de navegação -->
+        <ul class="nav-links">
+            <li>
+                <a href="index.html" class="active">Início</a>
+            </li>
+
+            <li>
+                <a href="filmes.html" >Filmes</a>
+            </li>
+
+            <li>
+                <a href="series.html">Séries</a>
+            </li>
+
+            
+
+        </ul>
+
+    </div>
+</nav>
+
+<body>
+    
+
+
+<!-- PRIMEIRO CARROSSEL -->
+<div class="container-fluid mt-4">
+
+    <h2 class="text-white mb-3">Destaque</h2>
+
+    <div id="carrosselDestaques" class="carousel slide"  data-bs-wrap="true">
+
+        <div class="carousel-inner">
+
+            <div class="carousel-item active">
+                <div class="row row-cols-2 row-cols-md-3 g-3">
+
+                    <div class="col">
+                        <div class="card bg-dark text-white">
+                            <img src="https://ingresso-a.akamaihd.net/b2b/production/uploads/articles-content/c0a47a68-1120-4607-a90f-4d3f2a126d78.jpg" class="card-img-top"alt="Homem Aranha: Brand New Day">
+                            <div class="card-body">
+                                <h6>Homem-Aranha: Um Novo Dia</h6>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card bg-dark text-white">
+                            <img src="https://m.media-amazon.com/images/M/MV5BMzU5ZGYzNmQtMTdhYy00OGRiLTg0NmQtYjVjNzliZTg1ZGE4XkEyXkFqcGc@._V1_QL75_UX190_CR0,2,190,281_.jpg" class="card-img-top"alt="Homem Aranha: Brand New Day">
+                            <div class="card-body">
+                                <h6>Breaking Bad</h6>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card bg-dark text-white">
+                            <img src="https://m.media-amazon.com/images/M/MV5BYjdlNGJlYjQtMDU2Mi00ZjA1LWEwYzgtYzlmNDM5MmE1ZGUwXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" class="card-img-top">
+                            <div class="card-body">
+                                <h6>Band of Brothers </h6>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <!-- Segundo grupo de filmes -->
+                 <div class="row row-cols-2 row-cols-md-3 g-3">
+
+                    <div class="col">
+                        <div class="card bg-dark text-white">
+                            <img src="https://thumb.wikimedia.org/wikipedia/pt/thumb/8/84/AOrigemPoster.jpg/250px-AOrigemPoster.jpg?utm_source=pt.wikipedia.org&utm_campaign=parser&utm_content=thumbnail" class="card-img-top">
+                            <div class="card-body">
+                                <h6>A Origem</h6>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card bg-dark text-white">
+                            <img src="https://upload.wikimedia.org/wikipedia/pt/3/3a/Interstellar_Filme.png?utm_source=pt.wikipedia.org&utm_campaign=index&utm_content=original.jpg" class="card-img-top">
+                            <div class="card-body">
+                                <h6>Interestelar</h6>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card bg-dark text-white">
+                            <img src="https://m.media-amazon.com/images/M/MV5BZjQwYzBlYzUtZjhhOS00ZDQ0LWE0NzAtYTk4MjgzZTNkZWEzXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" class="card-img-top">
+                            <div class="card-body">
+                                <h6>The Office</h6>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+        <button class="carousel-control-prev" type="button"
+            data-bs-target="#carrosselDestaques" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+
+        <button class="carousel-control-next" type="button"
+            data-bs-target="#carrosselDestaques" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+
+    </div>
+</div>
+
+
+<!-- SEGUNDO CARROSSEL -->
+<div class="container-fluid mt-5">
+
+    <h2 class="text-white mb-3">Ação</h2>
+
+    <div id="carrosselAcao" class="carousel slide" data-bs-wrap="true">
+
+        <div class="carousel-inner">
+
+            <div class="carousel-item active">
+                <div class="row row-cols-2 row-cols-md-3 g-3">
+
+                    <div class="col">
+                        <div class="card bg-dark text-white">
+                            <img src="https://m.media-amazon.com/images/M/MV5BMmE0YTA3MTItMjhiNC00MGQ3LTllZDktNGNiZWY1OWFmNmM1XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" class="card-img-top"alt="Homem Aranha: Brand New Day">
+                            <div class="card-body">
+                                <h6>Reacher</h6>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card bg-dark text-white">
+                            <img src="https://m.media-amazon.com/images/M/MV5BYjRkYzAzNjktZmRhMy00NjRiLWE0OTMtYmRmMTE5NDkzY2NlXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" class="card-img-top">
+                            <div class="card-body">
+                                <h6>The Mandalorian </h6>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card bg-dark text-white">
+                            <img src="https://play-lh.googleusercontent.com/tvod/AONTG1fm_NFpjFeVx1H1iXdkcRHJoO_8XDcyBbpZlTEIy2URNRBZ0ZqvwmXQAGFwgXCc-gkOQ0M9k5bleLNJd-JmVPMzUiQfOw=w240-h480-rw" class="card-img-top">
+                            <div class="card-body">
+                                <h6>Mad Max</h6>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <!-- Segundo grupo de filmes -->
+              
+            <div class="row row-cols-2 row-cols-md-3 g-3">
+
+                    <div class="col">
+                        <div class="card bg-dark text-white">
+                            <img src="https://ingresso-a.akamaihd.net/prd/img/movie/john-wick-de-volta-ao-jogo/fb75dc6f-07f3-41ed-aae5-eb09a50f91e0.jpg" class="card-img-top">
+                            <div class="card-body">
+                                <h6>John Wick</h6>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card bg-dark text-white">
+                            <img src="https://br.web.img3.acsta.net/pictures/14/09/26/22/42/410634.jpg" class="card-img-top">
+                            <div class="card-body">
+                                <h6>Jogos Vorazes</h6>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card bg-dark text-white">
+                            <img src="https://upload.wikimedia.org/wikipedia/pt/4/40/Alice_in_Borderland_%28s%C3%A9rie%29.png?utm_source=pt.wikipedia.org&utm_campaign=index&utm_content=original" class="card-img-top">
+                            <div class="card-body">
+                                <h6>Alice in Borderland</h6>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+        </div>
+
+        <button class="carousel-control-prev" type="button"
+            data-bs-target="#carrosselAcao" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+
+        <button class="carousel-control-next" type="button"
+            data-bs-target="#carrosselAcao" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+
+    </div>
+</div>
+
+
+
+
+
+<!-- TERCEIRO CARROSSEL -->
+<div class="container-fluid mt-5">
+
+    <h2 class="text-white mb-3">Terror</h2>
+
+    <div id="carrosselTerror" class="carousel slide" data-bs-wrap="true">
+
+        <div class="carousel-inner">
+
+            <div class="carousel-item active">
+                <div class="row row-cols-2 row-cols-md-3 g-3">
+
+                    <div class="col">
+                        <div class="card bg-dark text-white">
+                            <img src="https://beam-images.warnermediacdn.com/BEAM_LWM_DELIVERABLES/e4d6d6a6-69ea-46ce-a4cf-9f9b878eaaa5/74175fcc-c7b6-11f1-82b7-02ffdbe2ad4b.jpeg?host=wbd-images.prod-vod.h264.io&partner=beamcom&w=1024&w=1024" class="card-img-top">
+                            <div class="card-body">
+                                <h6>Crystal Lake</h6>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card bg-dark text-white">
+                            <img src="https://br.web.img3.acsta.net/c_310_420/img/9d/0d/9d0d1c113a7c5379e407fbebbd18df5e.jpg" class="card-img-top">
+                            <div class="card-body">
+                                <h6>Carrie</h6>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card bg-dark text-white">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpccyQ326GG4Xk3FuT8S998_UnpfRBCzVuQ421PCXalFFUEH6jQXz3PVE&s=10" class="card-img-top">
+                            <div class="card-body">
+                                <h6>Hallowen</h6>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <!-- Segundo grupo de filmes -->
+                 <div class="row row-cols-2 row-cols-md-3 g-3">
+
+                    <div class="col">
+                        <div class="card bg-dark text-white">
+                            <img src="https://m.media-amazon.com/images/M/MV5BNDFmODE3NDktZGVhNS00M2NmLWI1NDAtNTgzOTA0ZGFhODFiXkEyXkFqcGc@._V1_.jpg" class="card-img-top">
+                            <div class="card-body">
+                                <h6>IT: Bem-Vindos a Derry</h6>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card bg-dark text-white">
+                            <img src="https://ingresso-a.akamaihd.net/prd/img/movie/a-hora-do-pesadelo/2cf0171c-5954-4490-aeae-051ad5b1a439.webp" class="card-img-top">
+                            <div class="card-body">
+                                <h6>A Hora Do Pesadelo</h6>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card bg-dark text-white">
+                            <img src="https://m.media-amazon.com/images/M/MV5BMjc0YjE0NDItZGU2MC00OGNiLWI3NGQtMDk5M2ZmZGIwNDJjXkEyXkFqcGc@._V1_.jpg" class="card-img-top">
+                            <div class="card-body">
+                                <h6>Hellraiser 3</h6>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+        <button class="carousel-control-prev" type="button"
+            data-bs-target="#carrosselTerror" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+
+        <button class="carousel-control-next" type="button"
+            data-bs-target="#carrosselTerror" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+
+    </div>
+</div>
+
+
+
+
+
+<!-- QUARTO CARROSSEL -->
+<div class="container-fluid mt-5">
+
+    <h2 class="text-white mb-3">Comédia</h2>
+
+    <div id="carrosselComedia" class="carousel slide" data-bs-wrap="true">
+
+        <div class="carousel-inner">
+
+            <div class="carousel-item active">
+                <div class="row row-cols-2 row-cols-md-3 g-3">
+
+                    <div class="col">
+                        <div class="card bg-dark text-white">
+                            <img src="https://upload.wikimedia.org/wikipedia/pt/d/d8/ScaryMovie.jpg?utm_source=pt.wikipedia.org&utm_campaign=index&utm_content=original" class="card-img-top">
+                            <div class="card-body">
+                                <h6>Todo Mundo Em Pânico</h6>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card bg-dark text-white">
+                            <img src="https://m.media-amazon.com/images/M/MV5BMWZjYWEwMGMtNDE0MC00ODQ0LTlhNTMtZjhlYzhkNjcwYWU4XkEyXkFqcGc@._V1_.jpg" class="card-img-top">
+                            <div class="card-body">
+                                <h6>Eu, A Patroa E As Crianças</h6>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card bg-dark text-white">
+                            <img src="https://upload.wikimedia.org/wikipedia/pt/d/da/Minha_M%C3%A3e_%C3%A9_uma_Pe%C3%A7a.jpg?utm_source=pt.wikipedia.org&utm_campaign=index&utm_content=original" class="card-img-top">
+                            <div class="card-body">
+                                <h6>Minha Mãe É Uma Peça</h6>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <!-- Segundo grupo de filmes -->
+                 <div class="row row-cols-2 row-cols-md-3 g-3">
+
+                    <div class="col">
+                        <div class="card bg-dark text-white">
+                            <img src="https://upload.wikimedia.org/wikipedia/pt/a/ad/Cartaz_AQASNS.jpg?utm_source=pt.wikipedia.org&utm_campaign=index&utm_content=original" class="card-img-top">
+                            <div class="card-body">
+                                <h6>Até Que A Sorte Nos Separe</h6>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card bg-dark text-white">
+                            <img src="https://upload.wikimedia.org/wikipedia/pt/3/34/Norbit.jpg?utm_source=pt.wikipedia.org&utm_campaign=index&utm_content=original" class="card-img-top">
+                            <div class="card-body">
+                                <h6>Norbit</h6>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card bg-dark text-white">
+                            <img src="https://images.contentstack.io/v3/assets/blt13adb7e2033fcee5/blt66d7255b35df6f9d/691c86ad427b1c0f96101ec9/AmericanPie_Rated_Poster_2000x3000_uaa.jpg?width=2560" class="card-img-top">
+                            <div class="card-body">
+                                <h6>American Pie</h6>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+        <button class="carousel-control-prev" type="button"
+            data-bs-target="#carrosselComedia" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+
+        <button class="carousel-control-next" type="button"
+            data-bs-target="#carrosselComedia" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+
+    </div>
+</div>
+
+
+
+
+
+
+<!-- QUINTO CARROSSEL -->
+<div class="container-fluid mt-5">
+
+    <h2 class="text-white mb-3">Romance</h2>
+
+    <div id="carrosselRomance" class="carousel slide" data-bs-wrap="true">
+
+        <div class="carousel-inner">
+
+            <div class="carousel-item active">
+                <div class="row row-cols-2 row-cols-md-3 g-3">
+
+                    <div class="col">
+                        <div class="card bg-dark text-white">
+                            <img src="https://br.web.img3.acsta.net/c_310_420/pictures/16/02/03/19/11/303307.jpg" class="card-img-top">
+                            <div class="card-body">
+                                <h6>Como Eu Era Antes De Você</h6>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card bg-dark text-white">
+                            <img src="https://m.media-amazon.com/images/S/pv-target-images/e46417559054417d408881056c768e625399ef697188fe9a9a540e2dcb94e5ad.jpg" class="card-img-top">
+                            <div class="card-body">
+                                <h6>Diário De Uma Paixão</h6>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card bg-dark text-white">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEup8LrmeDj0szNjxgXdNZaiuwODnEsWhAr_9OqL6TNgY6F5ocRlkbMJE&s=10" class="card-img-top">
+                            <div class="card-body">
+                                <h6>Questão De Tempo</h6>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <!-- Segundo grupo de filmes -->
+                 <div class="row row-cols-2 row-cols-md-3 g-3">
+
+                    <div class="col">
+                        <div class="card bg-dark text-white">
+                            <img src="https://m.media-amazon.com/images/S/pv-target-images/e70e995339d0aa70e3332922116d544d7ec4848bcfa43ea3db2dfb4c65c2179d.jpg" class="card-img-top">
+                            <div class="card-body">
+                                <h6>10 Coisas Que Odeio Em Você</h6>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card bg-dark text-white">
+                            <img src="https://br.web.img3.acsta.net/medias/nmedia/18/87/84/14/20028635.jpg" class="card-img-top">
+                            <div class="card-body">
+                                <h6>Orgulho E Preconceito</h6>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card bg-dark text-white">
+                            <img src="https://br.web.img3.acsta.net/medias/nmedia/18/91/88/38/20167659.jpg" class="card-img-top">
+                            <div class="card-body">
+                                <h6>Encontro Marcado</h6>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+        <button class="carousel-control-prev" type="button"
+            data-bs-target="#carrosselRomance" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+
+        <button class="carousel-control-next" type="button"
+            data-bs-target="#carrosselRomance" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+
+    </div>
+</div>
+
+
+
+<!-- QUINTO CARROSSEL -->
+<div class="container-fluid mt-5">
+
+    <h2 class="text-white mb-3">Família</h2>
+
+    <div id="carrosselFam" class="carousel slide" data-bs-wrap="true">
+
+        <div class="carousel-inner">
+
+            <div class="carousel-item active">
+                <div class="row row-cols-2 row-cols-md-3 g-3">
+
+                    <div class="col">
+                        <div class="card bg-dark text-white">
+                            <img src="https://static.wikia.nocookie.net/pixar/images/c/ca/Toy_story_ver1_xlg.jpg/revision/latest?cb=20190407134954&path-prefix=pt" class="card-img-top">
+                            <div class="card-body">
+                                <h6>Toy Story</h6>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card bg-dark text-white">
+                            <img src="https://br.web.img3.acsta.net/c_310_420/pictures/16/04/11/16/56/089875.jpg" class="card-img-top"alt="Homem Aranha: Brand New Day">
+                            <div class="card-body">
+                                <h6>Naruto</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card bg-dark text-white">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRw0PR3DsCdh094dq8tys2j0OrvZEQ99MY1-FQZKFqKg_mHobxrLwiEjJ4&s=10" class="card-img-top"alt="Homem Aranha: Brand New Day">
+                            <div class="card-body">
+                                <h6>Hora De Aventura</h6>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <!-- Segundo grupo de filmes -->
+                 <div class="row row-cols-2 row-cols-md-3 g-3">
+
+                    <div class="col">
+                        <div class="card bg-dark text-white">
+                            <img src="https://static.wikia.nocookie.net/dublagem/images/b/be/Apenasumshowfitasperdidas.png/revision/latest?cb=20260506125609&path-prefix=pt-br" class="card-img-top">
+                            <div class="card-body">
+                                <h6>Apenas Um Show</h6>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card bg-dark text-white">
+                            <img src="https://br.web.img3.acsta.net/pictures/15/06/25/16/20/518080.jpg" class="card-img-top">
+                            <div class="card-body">
+                                <h6>O Pequeno Príncipe</h6>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card bg-dark text-white">
+                            <img src="https://thumb.wikimedia.org/wikipedia/pt/thumb/6/64/Zathura.jpg/250px-Zathura.jpg?utm_source=pt.wikipedia.org&utm_campaign=parser&utm_content=thumbnail" class="card-img-top">
+                            <div class="card-body">
+                                <h6>Zathura</h6>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+        <button class="carousel-control-prev" type="button"
+            data-bs-target="#carrosselFam" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+
+        <button class="carousel-control-next" type="button"
+            data-bs-target="#carrosselFam" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+
+    </div>
+</div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>

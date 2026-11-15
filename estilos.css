@@ -1,0 +1,104 @@
+
+/* Barra de navegação */
+.navbar {
+    background-color: #090b10;
+    border-bottom: 1px solid #252a35;
+    width: 100%;
+    padding: 20px 0;
+}
+
+/* Container principal */
+.nav-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Logo */
+.logo {
+    color: #e8435e;
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    text-decoration: none;
+}
+
+.logo span {
+    color: #ffffff;
+}
+
+/* Lista de links */
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* Links */
+.nav-links a {
+    color: #c6ccd6;
+    text-decoration: none;
+    font-size: 15px;
+
+    transition: color 0.3s;
+}
+
+/* Efeito ao passar o mouse */
+.nav-links a:hover {
+    color: #ffffff;
+}
+
+/* Página atual */
+.nav-links a.active {
+    color: #ffffff;
+    border-bottom: 2px solid #e8435e;
+    padding-bottom: 5px;
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+    .nav-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .nav-links {
+        gap: 18px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+
+body {
+    background-color: #141414;
+}
+
+.card {
+    border: none;
+    transition: transform 0.3s;
+}
+.card img {
+    width: 100%;
+    height: 350px;
+    object-fit: contain;
+    background-color: #141414;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.card-body {
+    color: white;
+}
+
